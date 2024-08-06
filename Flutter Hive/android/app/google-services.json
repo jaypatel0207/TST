@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "755301959068",
+    "project_id": "dynamiclink-a6f79",
+    "storage_bucket": "dynamiclink-a6f79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755301959068:android:fec6ab7c2a0e45023e7459",
+        "android_client_info": {
+          "package_name": "com.example.dynamic_link"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVTPJIiqTXTqW5hr7qxsNeRmr2U0zcmTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
