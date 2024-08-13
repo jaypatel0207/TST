@@ -5,6 +5,7 @@ import 'package:flutter_splash_screens/Flutter%20Charts/barhome.dart';
 import 'package:flutter_splash_screens/Flutter%20Charts/piehome.dart';
 import 'package:flutter_splash_screens/Image_slider/auto_image_slider.dart';
 import 'package:flutter_splash_screens/Image_slider/image.dart';
+import 'package:flutter_splash_screens/List%20view%20Animation/ListviewAnimate.dart';
 import 'package:flutter_splash_screens/Photo_View/photoexample.dart';
 import 'package:flutter_splash_screens/Slidable%20Widget/1.dart';
 import 'package:flutter_splash_screens/card%20Swipe/swipeExample.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
     
-      home:  Swipeexample(),
+      home:  Listviewanimate(),
     );
   }
 }
