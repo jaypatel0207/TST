@@ -40,7 +40,7 @@ class _slidable1State extends State<slidable1> {
             backgroundColor: Colors.red,
             icon: Icons.delete,
           ),
-            
+
         ]
         
         ),

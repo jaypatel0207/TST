@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_splash_screens/Flutter%20Charts/Circularchart.dart';
+import 'package:flutter_splash_screens/Flutter%20Charts/piehome.dart';
 import 'package:flutter_splash_screens/Image_slider/auto_image_slider.dart';
 import 'package:flutter_splash_screens/Image_slider/image.dart';
 import 'package:flutter_splash_screens/Slidable%20Widget/1.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
     
-      home:  slidable1(),
+      home:  Piehome(),
     );
   }
 }
