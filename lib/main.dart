@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_splash_screens/EmailVerification/login_page.dart';
+
 import 'package:flutter_splash_screens/Flutter%20Charts/Circularchart.dart';
 import 'package:flutter_splash_screens/Flutter%20Charts/LinearCharts.dart';
 import 'package:flutter_splash_screens/Flutter%20Charts/barhome.dart';
