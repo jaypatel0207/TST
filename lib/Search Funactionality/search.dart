@@ -43,7 +43,7 @@ class _SearchState extends State<Search> {
     } else {
       results = _allUsers
           .where((user) =>
-              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
+              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase())||user["Number"].toString().contains(enteredKeyword))
           .toList();
     }
 
