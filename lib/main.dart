@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_splash_screens/Flutter%20Charts/Circularchart.dart';
 import 'package:flutter_splash_screens/Flutter%20Charts/LinearCharts.dart';
 import 'package:flutter_splash_screens/Flutter%20Charts/barhome.dart';
+import 'package:flutter_splash_screens/Flutter%20Charts/columnchart.dart';
 import 'package:flutter_splash_screens/Flutter%20Charts/piehome.dart';
 import 'package:flutter_splash_screens/Image_slider/auto_image_slider.dart';
 import 'package:flutter_splash_screens/Image_slider/image.dart';
+import 'package:flutter_splash_screens/Search%20Funactionality/search.dart';
 import 'package:flutter_splash_screens/Slidable%20Widget/slidable.dart';
 import 'package:flutter_splash_screens/image%20animation/iamgeAnimate.dart';
 import 'package:flutter_splash_screens/Photo_View/photoexample.dart';
@@ -26,15 +28,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false, 
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.green, 
+        primaryColor: Colors.green,
         primarySwatch: Colors.green,
       ),
-    
-      home:  Slidable(
-                      ),
+      home: Search(),
     );
   }
 }
-
