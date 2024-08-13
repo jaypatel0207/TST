@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_splash_screens/Flutter%20Charts/columnchart.dart';
 import 'package:slide_to_act/slide_to_act.dart';
 
 class Slidable extends StatefulWidget {
@@ -29,7 +30,10 @@ class _SlidableState extends State<Slidable> {
           outerColor: Colors.blue,
           sliderButtonIcon: Icon(Icons.currency_rupee_outlined),
           text: "Slide to Pay",
-          onSubmit: () {},
+          
+          onSubmit: () {
+      
+          },
         ),
       )),
     );
