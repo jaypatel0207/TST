@@ -51,6 +51,7 @@ dependencies:
   fluttertoast: ^8.2.5
   get: ^4.6.6
   animate_do: ^3.3.4
+  slide_to_act: ^2.0.2
 
 dev_dependencies:
   flutter_test:

@@ -12,25 +12,23 @@ class _ListviewanimateState extends State<Listviewanimate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: 
-      SafeArea(
+      body: SafeArea(
         child: PageView(
           children: [
-              Center(
-            child: FadeInLeft(
-              duration: Duration(seconds: 1),
-              //delay: Duration(seconds: 3),
-              from: 300,
-              
-              child: Container(
-                height: 500, 
-                width: 300, 
-                child: Image.asset("assets/logo.jpg"),
+            Center(
+              child: FadeInLeft(
+                duration: Duration(seconds: 1),
+                //delay: Duration(seconds: 3),
+                from: 300,
+
+                child: Container(
+                  height: 500,
+                  width: 300,
+                  child: Image.asset("assets/logo.jpg"),
+                ),
               ),
             ),
-          ),
           ],
-         
         ),
       ),
     );
