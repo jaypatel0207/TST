@@ -402,9 +402,6 @@ class _MovieApiState extends State<MovieApi> {
     // TODO: implement initState
     super.initState();
     _foundMovie = movies;
-
-
-
   }
 
   void _runFilter(String enteredKeyword) {
@@ -414,7 +411,10 @@ class _MovieApiState extends State<MovieApi> {
     } else {
       results = movies
           .where((user) =>
-              user["title"].toLowerCase().contains(enteredKeyword.toLowerCase())||user["awards"].toLowerCase().contains(enteredKeyword))
+              user["title"]
+                  .toLowerCase()
+                  .contains(enteredKeyword.toLowerCase()) ||
+              user["awards"].toLowerCase().contains(enteredKeyword))
           .toList();
     }
 
@@ -461,7 +461,7 @@ class _MovieApiState extends State<MovieApi> {
               height: 20,
             ),
             TextField(
-             onChanged: (value) => _runFilter(value),
+              onChanged: (value) => _runFilter(value),
               decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10)),
@@ -474,7 +474,7 @@ class _MovieApiState extends State<MovieApi> {
             Expanded(
               child: ListView.builder(
                 shrinkWrap: true,
-                itemCount:  _foundMovie.length,
+                itemCount: _foundMovie.length,
                 itemBuilder: (context, index) {
                   return Column(
                     children: [
@@ -486,9 +486,15 @@ class _MovieApiState extends State<MovieApi> {
                               padding: const EdgeInsets.all(16.0),
                               child: ListTile(
                                 onTap: () {
-                                  Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Profilemovie(title: _foundMovie[index]["title"], awards: _foundMovie[index]["awards"],)));
-
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Profilemovie(
+                                                title: _foundMovie[index]
+                                                    ["title"],
+                                                awards: _foundMovie[index]
+                                                    ["awards"],
+                                              )));
                                 },
                                 leading: Text(
                                   "${_foundMovie[index]["id"].toString()}",
