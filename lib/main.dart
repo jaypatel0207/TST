@@ -8,6 +8,7 @@ import 'package:flutter_splash_screens/Flutter%20Charts/piehome.dart';
 import 'package:flutter_splash_screens/Image_slider/auto_image_slider.dart';
 import 'package:flutter_splash_screens/Image_slider/image.dart';
 import 'package:flutter_splash_screens/Search%20Funactionality/search.dart';
+import 'package:flutter_splash_screens/Search%20Funactionality/searchMovie_Using_API/movie.dart';
 import 'package:flutter_splash_screens/Slidable%20Widget/slidable.dart';
 import 'package:flutter_splash_screens/image%20animation/iamgeAnimate.dart';
 import 'package:flutter_splash_screens/Photo_View/photoexample.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.green,
         primarySwatch: Colors.green,
       ),
-      home: slidable1(),
+      home: MovieApi(),
     );
   }
 }
